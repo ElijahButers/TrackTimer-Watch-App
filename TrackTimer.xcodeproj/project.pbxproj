@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292E591D1B71E01D00C0B8F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E591C1B71E01D00C0B8F6 /* AppDelegate.swift */; };
+		292E59221B71E01D00C0B8F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292E59201B71E01D00C0B8F6 /* Main.storyboard */; };
+		292E59241B71E01D00C0B8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292E59231B71E01D00C0B8F6 /* Assets.xcassets */; };
+		292E59271B71E01D00C0B8F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292E59251B71E01D00C0B8F6 /* LaunchScreen.storyboard */; };
+		292E592C1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 292E592B1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app */; };
+		292E59321B71E01D00C0B8F6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292E59301B71E01D00C0B8F6 /* Interface.storyboard */; };
+		292E59341B71E01D00C0B8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292E59331B71E01D00C0B8F6 /* Assets.xcassets */; };
+		292E593B1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 292E593A1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		292E59421B71E01E00C0B8F6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E59411B71E01E00C0B8F6 /* ExtensionDelegate.swift */; };
+		292E59441B71E01E00C0B8F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292E59431B71E01E00C0B8F6 /* Assets.xcassets */; };
+		292E59551B71E14900C0B8F6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E59541B71E14900C0B8F6 /* Track.swift */; };
+		292E59561B71E14900C0B8F6 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E59541B71E14900C0B8F6 /* Track.swift */; };
+		292E59591B71EBC300C0B8F6 /* TrackTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E59571B71EBC300C0B8F6 /* TrackTableController.swift */; };
+		292E595C1B71EBCE00C0B8F6 /* TrackRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E595A1B71EBCE00C0B8F6 /* TrackRowController.swift */; };
+		293A2BC21B745DEA006FDB86 /* TrackTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BC11B745DEA006FDB86 /* TrackTimer.swift */; };
+		293A2BC31B7462AC006FDB86 /* TrackTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BC11B745DEA006FDB86 /* TrackTimer.swift */; };
+		293A2BC81B7480ED006FDB86 /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BC71B7480ED006FDB86 /* MZTimerLabel.m */; };
+		293A2BCA1B748255006FDB86 /* TimerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BC91B748255006FDB86 /* TimerTableViewController.swift */; };
+		293A2BCC1B748265006FDB86 /* TracksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BCB1B748265006FDB86 /* TracksTableViewController.swift */; };
+		293A2BD01B75D37A006FDB86 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A2BCF1B75D37A006FDB86 /* TimerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		292E592D1B71E01D00C0B8F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292E59111B71E01D00C0B8F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292E592A1B71E01D00C0B8F6;
+			remoteInfo = "TrackTimer WatchKit App";
+		};
+		292E593C1B71E01E00C0B8F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292E59111B71E01D00C0B8F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292E59391B71E01E00C0B8F6;
+			remoteInfo = "TrackTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		292E594B1B71E01E00C0B8F6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				292E593B1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292E594F1B71E01E00C0B8F6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				292E592C1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		292E59191B71E01D00C0B8F6 /* TrackTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		292E591C1B71E01D00C0B8F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		292E59211B71E01D00C0B8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		292E59231B71E01D00C0B8F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292E59261B71E01D00C0B8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		292E59281B71E01D00C0B8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292E592B1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrackTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292E59311B71E01D00C0B8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		292E59331B71E01D00C0B8F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292E59351B71E01D00C0B8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292E593A1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrackTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292E59411B71E01E00C0B8F6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		292E59431B71E01E00C0B8F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292E59451B71E01E00C0B8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292E59541B71E14900C0B8F6 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Track.swift; path = Shared/Track.swift; sourceTree = "<group>"; };
+		292E59571B71EBC300C0B8F6 /* TrackTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackTableController.swift; sourceTree = "<group>"; };
+		292E595A1B71EBCE00C0B8F6 /* TrackRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackRowController.swift; sourceTree = "<group>"; };
+		293A2BC11B745DEA006FDB86 /* TrackTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackTimer.swift; path = Shared/TrackTimer.swift; sourceTree = "<group>"; };
+		293A2BC51B7480ED006FDB86 /* TrackTimer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackTimer-Bridging-Header.h"; sourceTree = "<group>"; };
+		293A2BC61B7480ED006FDB86 /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		293A2BC71B7480ED006FDB86 /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		293A2BC91B748255006FDB86 /* TimerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTableViewController.swift; sourceTree = "<group>"; };
+		293A2BCB1B748265006FDB86 /* TracksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksTableViewController.swift; sourceTree = "<group>"; };
+		293A2BCF1B75D37A006FDB86 /* TimerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292E59161B71E01D00C0B8F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292E59371B71E01E00C0B8F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292E59101B71E01D00C0B8F6 = {
+			isa = PBXGroup;
+			children = (
+				292E59531B71E07D00C0B8F6 /* Shared */,
+				292E591B1B71E01D00C0B8F6 /* TrackTimer */,
+				292E592F1B71E01D00C0B8F6 /* TrackTimer WatchKit App */,
+				292E593E1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension */,
+				292E591A1B71E01D00C0B8F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		292E591A1B71E01D00C0B8F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				292E59191B71E01D00C0B8F6 /* TrackTimer.app */,
+				292E592B1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app */,
+				292E593A1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		292E591B1B71E01D00C0B8F6 /* TrackTimer */ = {
+			isa = PBXGroup;
+			children = (
+				293A2BC41B7480DF006FDB86 /* Vendor */,
+				292E591C1B71E01D00C0B8F6 /* AppDelegate.swift */,
+				292E59201B71E01D00C0B8F6 /* Main.storyboard */,
+				293A2BC91B748255006FDB86 /* TimerTableViewController.swift */,
+				293A2BCB1B748265006FDB86 /* TracksTableViewController.swift */,
+				292E59231B71E01D00C0B8F6 /* Assets.xcassets */,
+				292E59251B71E01D00C0B8F6 /* LaunchScreen.storyboard */,
+				292E59281B71E01D00C0B8F6 /* Info.plist */,
+			);
+			path = TrackTimer;
+			sourceTree = "<group>";
+		};
+		292E592F1B71E01D00C0B8F6 /* TrackTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				292E59301B71E01D00C0B8F6 /* Interface.storyboard */,
+				292E59331B71E01D00C0B8F6 /* Assets.xcassets */,
+				292E59351B71E01D00C0B8F6 /* Info.plist */,
+			);
+			path = "TrackTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		292E593E1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				292E59431B71E01E00C0B8F6 /* Assets.xcassets */,
+				292E59411B71E01E00C0B8F6 /* ExtensionDelegate.swift */,
+				292E59451B71E01E00C0B8F6 /* Info.plist */,
+				293A2BCF1B75D37A006FDB86 /* TimerController.swift */,
+				292E595A1B71EBCE00C0B8F6 /* TrackRowController.swift */,
+				292E59571B71EBC300C0B8F6 /* TrackTableController.swift */,
+			);
+			path = "TrackTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		292E59531B71E07D00C0B8F6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				292E59541B71E14900C0B8F6 /* Track.swift */,
+				293A2BC11B745DEA006FDB86 /* TrackTimer.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		293A2BC41B7480DF006FDB86 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				293A2BC61B7480ED006FDB86 /* MZTimerLabel.h */,
+				293A2BC71B7480ED006FDB86 /* MZTimerLabel.m */,
+				293A2BC51B7480ED006FDB86 /* TrackTimer-Bridging-Header.h */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		292E59181B71E01D00C0B8F6 /* TrackTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292E59501B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer" */;
+			buildPhases = (
+				292E59151B71E01D00C0B8F6 /* Sources */,
+				292E59161B71E01D00C0B8F6 /* Frameworks */,
+				292E59171B71E01D00C0B8F6 /* Resources */,
+				292E594F1B71E01E00C0B8F6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292E592E1B71E01D00C0B8F6 /* PBXTargetDependency */,
+			);
+			name = TrackTimer;
+			productName = TrackTimer;
+			productReference = 292E59191B71E01D00C0B8F6 /* TrackTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		292E592A1B71E01D00C0B8F6 /* TrackTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292E594C1B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer WatchKit App" */;
+			buildPhases = (
+				292E59291B71E01D00C0B8F6 /* Resources */,
+				292E594B1B71E01E00C0B8F6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292E593D1B71E01E00C0B8F6 /* PBXTargetDependency */,
+			);
+			name = "TrackTimer WatchKit App";
+			productName = "TrackTimer WatchKit App";
+			productReference = 292E592B1B71E01D00C0B8F6 /* TrackTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		292E59391B71E01E00C0B8F6 /* TrackTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292E59481B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer WatchKit Extension" */;
+			buildPhases = (
+				292E59361B71E01E00C0B8F6 /* Sources */,
+				292E59371B71E01E00C0B8F6 /* Frameworks */,
+				292E59381B71E01E00C0B8F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrackTimer WatchKit Extension";
+			productName = "TrackTimer WatchKit Extension";
+			productReference = 292E593A1B71E01E00C0B8F6 /* TrackTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		292E59111B71E01D00C0B8F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ray Wenderlich";
+				TargetAttributes = {
+					292E59181B71E01D00C0B8F6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					292E592A1B71E01D00C0B8F6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					292E59391B71E01E00C0B8F6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 292E59141B71E01D00C0B8F6 /* Build configuration list for PBXProject "TrackTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 292E59101B71E01D00C0B8F6;
+			productRefGroup = 292E591A1B71E01D00C0B8F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				292E59181B71E01D00C0B8F6 /* TrackTimer */,
+				292E592A1B71E01D00C0B8F6 /* TrackTimer WatchKit App */,
+				292E59391B71E01E00C0B8F6 /* TrackTimer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		292E59171B71E01D00C0B8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292E59271B71E01D00C0B8F6 /* LaunchScreen.storyboard in Resources */,
+				292E59241B71E01D00C0B8F6 /* Assets.xcassets in Resources */,
+				292E59221B71E01D00C0B8F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292E59291B71E01D00C0B8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292E59341B71E01D00C0B8F6 /* Assets.xcassets in Resources */,
+				292E59321B71E01D00C0B8F6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292E59381B71E01E00C0B8F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292E59441B71E01E00C0B8F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		292E59151B71E01D00C0B8F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292E591D1B71E01D00C0B8F6 /* AppDelegate.swift in Sources */,
+				293A2BCC1B748265006FDB86 /* TracksTableViewController.swift in Sources */,
+				293A2BC81B7480ED006FDB86 /* MZTimerLabel.m in Sources */,
+				293A2BC21B745DEA006FDB86 /* TrackTimer.swift in Sources */,
+				293A2BCA1B748255006FDB86 /* TimerTableViewController.swift in Sources */,
+				292E59551B71E14900C0B8F6 /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292E59361B71E01E00C0B8F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292E595C1B71EBCE00C0B8F6 /* TrackRowController.swift in Sources */,
+				293A2BC31B7462AC006FDB86 /* TrackTimer.swift in Sources */,
+				292E59421B71E01E00C0B8F6 /* ExtensionDelegate.swift in Sources */,
+				292E59561B71E14900C0B8F6 /* Track.swift in Sources */,
+				292E59591B71EBC300C0B8F6 /* TrackTableController.swift in Sources */,
+				293A2BD01B75D37A006FDB86 /* TimerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		292E592E1B71E01D00C0B8F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292E592A1B71E01D00C0B8F6 /* TrackTimer WatchKit App */;
+			targetProxy = 292E592D1B71E01D00C0B8F6 /* PBXContainerItemProxy */;
+		};
+		292E593D1B71E01E00C0B8F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292E59391B71E01E00C0B8F6 /* TrackTimer WatchKit Extension */;
+			targetProxy = 292E593C1B71E01E00C0B8F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		292E59201B71E01D00C0B8F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292E59211B71E01D00C0B8F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		292E59251B71E01D00C0B8F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292E59261B71E01D00C0B8F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		292E59301B71E01D00C0B8F6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292E59311B71E01D00C0B8F6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		292E59461B71E01E00C0B8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		292E59471B71E01E00C0B8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		292E59491B71E01E00C0B8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TrackTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		292E594A1B71E01E00C0B8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "TrackTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		292E594D1B71E01E00C0B8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TrackTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "TrackTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		292E594E1B71E01E00C0B8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TrackTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "TrackTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		292E59511B71E01E00C0B8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TrackTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackTimer/TrackTimer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		292E59521B71E01E00C0B8F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = TrackTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.TrackTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TrackTimer/TrackTimer-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		292E59141B71E01D00C0B8F6 /* Build configuration list for PBXProject "TrackTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292E59461B71E01E00C0B8F6 /* Debug */,
+				292E59471B71E01E00C0B8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292E59481B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292E59491B71E01E00C0B8F6 /* Debug */,
+				292E594A1B71E01E00C0B8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292E594C1B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292E594D1B71E01E00C0B8F6 /* Debug */,
+				292E594E1B71E01E00C0B8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292E59501B71E01E00C0B8F6 /* Build configuration list for PBXNativeTarget "TrackTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292E59511B71E01E00C0B8F6 /* Debug */,
+				292E59521B71E01E00C0B8F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 292E59111B71E01D00C0B8F6 /* Project object */;
+}

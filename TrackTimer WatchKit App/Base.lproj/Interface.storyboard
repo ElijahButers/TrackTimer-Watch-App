@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8083.2"/>
+    </dependencies>
+    <scenes>
+        <!--Tracks-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Tracks" id="AgC-eL-Hgc" customClass="TrackTableController" customModule="TrackTimer_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="9aG-r7-Hcf">
+                            <items>
+                                <tableRow identifier="TrackRow" id="GiA-Y8-Q3M" customClass="TrackRowController" customModule="TrackTimer_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="HCl-6p-zHJ">
+                                        <items>
+                                            <group width="0.20000000000000001" height="1" alignment="left" id="ROP-gh-hKk">
+                                                <items>
+                                                    <imageView width="25" height="25" alignment="center" verticalAlignment="center" image="spa" contentMode="scaleAspectFill" id="8a7-1r-UGs"/>
+                                                </items>
+                                            </group>
+                                            <group width="0.80000000000000004" alignment="left" layout="vertical" id="Kqm-eI-LNO">
+                                                <items>
+                                                    <label alignment="left" text="Name" id="mGF-pl-TNP">
+                                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                                    </label>
+                                                    <group width="1" alignment="left" id="BvI-RI-tIF">
+                                                        <items>
+                                                            <label alignment="left" text="USA" id="OLJ-5V-Sag">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                            <label alignment="right" text="7.2km" id="u2j-Iq-r2L">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countryLabel" destination="OLJ-5V-Sag" id="Dri-L3-Sfs"/>
+                                        <outlet property="icon" destination="8a7-1r-UGs" id="h7E-Gg-3LT"/>
+                                        <outlet property="lengthLabel" destination="u2j-Iq-r2L" id="jQ9-A1-Vc3"/>
+                                        <outlet property="nameLabel" destination="mGF-pl-TNP" id="wF5-Ah-NpM"/>
+                                        <segue destination="cuO-fP-ZyL" kind="push" id="oJ1-bF-0kA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="9aG-r7-Hcf" id="pEE-ce-VdM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="387" y="372.5"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="gyj-pS-DyX">
+            <objects>
+                <controller title="Timer" spacing="8" hidesWhenLoading="NO" id="cuO-fP-ZyL" customClass="TimerController" customModule="TrackTimer_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="10" id="z6s-jz-F37">
+                            <items>
+                                <label alignment="center" text="NAME" id="Y2s-lq-ypb">
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                                <timer height="32" alignment="center" previewedSeconds="0" id="fRv-oe-pne">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="35"/>
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <label alignment="center" text="Lap 0/1" id="P1Y-gQ-E4d"/>
+                                <button width="1" alignment="left" title="Start" id="ogB-hU-Fsk">
+                                    <connections>
+                                        <action selector="onTimerButton" destination="cuO-fP-ZyL" id="kyD-L6-nec"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="container" destination="z6s-jz-F37" id="Ycf-AD-1WT"/>
+                        <outlet property="lapLabel" destination="P1Y-gQ-E4d" id="kGm-Jg-VIx"/>
+                        <outlet property="nameLabel" destination="Y2s-lq-ypb" id="v6k-bW-VD2"/>
+                        <outlet property="startButton" destination="ogB-hU-Fsk" id="8aV-Oc-7Gm"/>
+                        <outlet property="timer" destination="fRv-oe-pne" id="3ew-jF-iEG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="631" y="372"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.82745098039999998" green="0.16078431369999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+</document>
