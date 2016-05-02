@@ -31,7 +31,7 @@ class TrackTableController: WKInterfaceController {
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
 
-    updateTable()
+    updateTable(true)
   }
 
     func updateTable(alphaSort: Bool) {
@@ -64,9 +64,13 @@ class TrackTableController: WKInterfaceController {
   }
     
     @IBAction func onAplhaSort() {
+        
+        updateTable(true)
     }
     
     @IBAction func onCircuitSort() {
+        
+        updateTable(false)
     }
 
 }
