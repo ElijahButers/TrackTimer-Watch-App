@@ -55,5 +55,11 @@ class TrackTableController: WKInterfaceController {
   override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
     return tracks[rowIndex]
   }
+    
+    @IBAction func onAplhaSort() {
+    }
+    
+    @IBAction func onCircuitSort() {
+    }
 
 }

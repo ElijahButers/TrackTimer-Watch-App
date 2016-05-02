@@ -55,8 +55,16 @@
                     </items>
                     <menu key="menu" id="8Fi-lc-9OL">
                         <items>
-                            <menuItem title="Aplhabetical" image="alpha" id="4zB-pw-a7P"/>
-                            <menuItem title="Circuit Length" image="ruler" id="Mhy-IU-zgZ"/>
+                            <menuItem title="Aplhabetical" image="alpha" id="4zB-pw-a7P">
+                                <connections>
+                                    <action selector="onAplhaSort" destination="AgC-eL-Hgc" id="LcE-5o-bGe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Circuit Length" image="ruler" id="Mhy-IU-zgZ">
+                                <connections>
+                                    <action selector="onCircuitSort" destination="AgC-eL-Hgc" id="G1n-zq-gpX"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
