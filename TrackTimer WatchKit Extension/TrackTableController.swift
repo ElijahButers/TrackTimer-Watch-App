@@ -34,8 +34,15 @@ class TrackTableController: WKInterfaceController {
     updateTable()
   }
 
-  func updateTable() {
-    tracks = Track.famousTracks
+    func updateTable(alphaSort: Bool) {
+        
+        let sort :((Track, Track) -> Bool)
+        if alphaSort {
+            sort = { $0.name < $1.name }
+        } else {
+            sort = { $0.circuitLength < $1.circuitLength }
+        }
+    tracks = Track.famousTracks.sort(sort)
 
     table.setNumberOfRows(tracks.count, withRowType: "TrackRow")
 
