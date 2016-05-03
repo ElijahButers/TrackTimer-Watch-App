@@ -59,6 +59,8 @@ class TimerController: WKInterfaceController {
       timer.stop()
     }
     lapLabel.setText("Lap \(trackTimer.lap)/\(trackTimer.track.laps)")
+    
+    updateMenuItems()
   }
 
   func startTimer() {
@@ -77,6 +79,16 @@ class TimerController: WKInterfaceController {
                 addMenuItemWithItemIcon(.Pause, title: "Pause", action: "pauseTimer")
             }
         }
+    }
+    
+    func pauseTimer() {
+        trackTimer.pause()
+        updateState()
+    }
+    
+    func reset() {
+        trackTimer.end()
+        updateState()
     }
 
   @IBAction func onTimerButton() {
