@@ -65,6 +65,19 @@ class TimerController: WKInterfaceController {
     trackTimer.resume()
     updateState()
   }
+    
+    func updateMenuItems() {
+        
+        clearAllMenuItems()
+        if trackTimer.hasStarted {
+            addMenuItemWithItemIcon(.Decline, title: "End", action: "reset")
+            if trackTimer.isPaused  {
+                addMenuItemWithItemIcon(.Play, title: "Resume", action: "startTimer")
+            } else {
+                addMenuItemWithItemIcon(.Pause, title: "Pause", action: "pauseTimer")
+            }
+        }
+    }
 
   @IBAction func onTimerButton() {
     trackTimer.addLap()
